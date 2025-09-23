@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #1f1f1f95;
+    position: fixed;
+    top: 0px;
+}
+
+.logo{
+    width: 10%;
+}
+
+
+.logo img{
+    width: 6.25rem;
+    border: 2px solid black;
+    border-radius: 1.25rem;
+}
+
+
+.nav{
+    width: 90%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+    height: 6.25rem;
+    
+}
+
+
+
+.navbar li a {
+
+    align-self:center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+
+.navbar li a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.banner{
+    width:100%;
+    height: 31.25rem;
+    background-image: url(../assets/imagenes-generales/bike-austria.avif);
+    background-size: cover;
+    background-position: 40% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.banner h1{
+    font-style: italic;
+  
+    
+}
+
+h1:hover::after{
+    content:"Primavera";
+    color:red;
+
+}
+
+.banner-info{
+    width: 40%;
+    
+}
+
+.banner-info p{
+    color: #fff;
+    font-size: larger;
+    margin-top: 20px;
+    
+}
+.banner div button{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 1.25rem;
+    margin-top: 1.875rem;
+   
+}
+
+.banner div button:active{
+    background-color: rgb(198, 237, 201);
+}
+
+
+body{ 
+    background-color: rgba(120, 235, 197, 0.948);
+   
+}
+ 
+.section-principal {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid black;
+    height: 26.25rem;
+    margin-top: .625rem
+}
+
+.section-principal article{
+    width: 40%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+}
+
+.section-principal article h2{
+    font-size: 3.125rem;
+    font-style: oblique;
+    
+   
+}
+
+h2::first-letter{
+    color: rgb(228, 4, 49);
+    font-size: 4.375rem;
+}
+
+.section-principal article p{
+    width: 50%;
+    text-align: center;
+    background-color:rgba(216, 214, 214, 0.938);
+    border-radius: 10px 10px;
+    border: 1px solid black;
+}
+
+.section-principal-div {
+    width: 40%;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .625rem;
+}
+
+.section-principal img {
+   width: 100%;
+   height: 25rem;
+   object-fit: cover;
+   grid-column: 1/2;
+   grid-row: 1/4;
+   border-radius: 100px 100px 0px 0px;
+   
+}
+
+.section-principal img:hover{
+    filter: drop-shadow(1px 1px .625rem rgb(166, 67, 166));
+
+}
+
+
+
+.section-principal-div div:nth-child(2){
+    color:blue;
+    background-color:rgba(216, 214, 214, 0.938);
+    border-radius: 10px 10px;
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 1/2 ;
+    align-self: flex-end;
+}
+
+.section-principal-div div:nth-child(2) p {
+      color: black;
+}
+
+
+.section-principal-div div:nth-child(3){
+    color:blue;
+    background-color:rgba(216, 214, 214, 0.938);
+    border-radius: 10px 10px;
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+
+}
+
+.section-principal-div div:nth-child(3) p {
+      color: black;
+}
+   
+
+.section-principal-div div:nth-child(4){
+    color:blue;
+    background-color:rgba(216, 214, 214, 0.938);
+    border-radius: 10px 10px;
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: center;
+
+}
+
+.section-principal-div div:nth-child(4) p{
+    color: black;
+}
+     
+
+@media(max-width:1033px){
+
+    .section-principal {
+        display: flex;
+        width: 100%;
+        flex-direction:column;
+        justify-content:center;
+        border: 1px solid black;
+        height: auto;
+       
+        align-items: center;
+    }
+    
+    .section-principal-div{
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    .section-principal article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .section-principal article h2,p{
+        width: 100%;
+    }
+ }
+
+
+
+.calle{
+    width: 12.5rem;
+    height: 12.5rem;
+} 
+
+.whatsapp img {
+    width: 40px;
+    height: 40px;
+}
+
+.facebook img {
+    width: 40px;
+    height: 40px;
+}
+
+.instagram img {
+    width: 40px;
+    height: 40px;
+}
