@@ -232,6 +232,30 @@ h2::first-letter{
 }
 
 
+
+.grid-container {
+   
+    background-color: #d2c8c8;
+    
+  
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+
+
 footer{
     width: 100%;
     background-color: rgb(169, 164, 164);
