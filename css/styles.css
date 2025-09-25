@@ -238,22 +238,41 @@ h2::first-letter{
 
 .grid-container {
    
-    background-color: #d2c8c8;
-    width: 80%;
-    margin: auto;
+    background-color: rgb(121, 109, 209);
+    width:100%;
+    justify-content: center;
+    margin-top: 5px;
     
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-column: 1/2 2/3;
+    grid-row: 1/2 2/3;
     gap: 1.25rem;
 }
 
 
 .grid-item {
   background-color: #f0f0f0;
-  padding: 100px 100px;
-  border: 1px solid black;
- text-align: center;
+  width: 25rem;
+  height: 25rem;
+  border: 2px solid black;
+  margin: auto;
+  border-radius: 10%;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item :hover{
+    color:blue;
+}
+
+.grid-item img{
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    
+ 
 }
 
 
